@@ -1,0 +1,87 @@
+//username:
+//By Xpath:
+
+1. //input[@name='username']
+2. //input[@placeholder='Username']
+3. //input[contains(@name,'username')]
+4. //input[contains(@name,'name')]
+4. //input[contains(@placeholder,'name')]
+5. //input[contains(@placeholder,'User')]
+6. //div[contains(@class,'login-form')]//input[@name='username']
+7. (//div[contains(@class,'login-form')]//div[2]//input)[1]
+8. //i[contains(@class,'bi-person')]//..//..//input
+9. //label[text()='Username']//..//..//input
+10. (//label[text()='Password']//preceding::input)[2]
+11. //label[text()='Password']//preceding::input[contains(@name,'username')]
+12. //label[text()='Username']//following::input[contains(@name,'username')]
+13. (//label[text()='Username']//following::input)[1]
+14. //label[text()='Username']//parent::div//parent::div//input
+15. //input[@name='username' and @placeholder='Username']
+16. //input[@name='username' or @placeholder='Username']
+
+//username:
+//By CSS:
+1. input[name='username']
+2. input[placeholder='Username']
+3. div.oxd-input-group input:first-of-type[name='username']
+4. .orangehrm-login-form div.oxd-form-row:first-of-type input
+5. .orangehrm-login-form div.oxd-form-row:nth-of-type(1) input
+6. .orangehrm-login-form div:nth-child(2) input:first-of-type[name='username']
+7. input[name*='username']
+8. input[name^='user']
+9. input[name$='name']
+10. input[placeholder$='name']
+=====================================================================
+//Password
+//By.xpath
+1. //input[@name='password']
+2. //input[@placeholder='Password']
+3. //input[@type='password']
+4. //input[contains(@type,'password')]
+5. //input[contains(@type,'password') and @name='password']
+6. //input[contains(@type,'password') or @name='password']
+7. //i[contains(@class,'bi-key')]//..//..//input
+8. //form[@class='oxd-form']//input[@name='password']
+9. (//div[@class='oxd-form-row'])[2]//input
+10. (//div[@class='oxd-form-row'])[2]//following::input
+11. (//i[contains(@class,'bi-key')]//preceding::div//following::input)[3]
+12. //label[text()='Password']//preceding::div[@class='oxd-form-row']//input
+13. //i[contains(@class,'bi-key')]//..//following-sibling::div//input
+14. //label[text()='Password']//following::input
+15. (//div[@class='oxd-input-group__label-wrapper']//following-sibling::div)[2]//input
+
+//Password
+//By CSS
+1. input[type='password']
+2. input[name='password']
+3. input[name*='password']
+4. input[name^='pass']
+5. input[name$='word']
+6. .orangehrm-login-form div.oxd-form-row:nth-of-type(2) input
+7. .oxd-input-group div:nth-of-type(2) input[name='password']
+8. .orangehrm-login-form div.oxd-form-row:nth-of-type(2) input
+9. div.oxd-input-group input:first-of-type[name='password']
+10. input[placeholder$='word']
+
+=====================================================================
+//Login button
+//Xpath
+1. //button[text()=' Login ']
+2. //button[@type='submit']
+3. //button[contains(@type,'submit')]
+4. //button[contains(@class,'oxd-button')]
+5. //div[contains(@class,'login-action')]//button
+6. //div[contains(@class,'login-form')]//button
+7. //div[contains(@class,'login-form')]//following::button
+8. //div[contains(@class,'forgot')]//preceding::button
+9.//div[contains(@class,'forgot')]//..//following::button
+10. //div[contains(@class,'forgot')]//parent::div//preceding::button
+
+//CSS
+1. button[type='submit']
+2. .oxd-button
+3. button.oxd-button
+4. .oxd-form button
+5. .oxd-form .oxd-form-actions button
+6. .orangehrm-login-form button
+
